@@ -25,5 +25,13 @@ def sum_up_diagonals(matrix):
         # print(matrix[idx][idx], [-1 - idx])
         total += matrix[idx][idx]
         total += matrix[idx][-1 - idx]
-        # -1 - 0 = index -1 = (3) // -1 -1 = index -2 = (5) // -1 - 2 = index -3 (7) //
     return total
+
+
+# -1 - 0 = index -1 = (3) // -1 -1 = index -2 = (5) // -1 - 2 = index -3 (7) //
+
+
+# print(L[i][-1 - i])....-1 = the last element of the nested list.
+# Therefore -1 at each index equals 3, 6, and 9.
+# When you subtract the -1 index (3,6,9) by the index of the nested list (0,1,2)
+# You get 3-0 = 3 // 6-1 = 5 // 9-2 = 7
