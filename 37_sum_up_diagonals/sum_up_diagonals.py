@@ -19,11 +19,12 @@ def sum_up_diagonals(matrix):
         30
     """
 
-    total = 0 
+    total = 0
 
     for idx in range(len(matrix)):
-        # print(matrix[idx][idx])
-        # print(matrix[idx][-1-idx])
+        # print(matrix[idx][idx], [-1 - idx])
         total += matrix[idx][idx]
-        total += matrix[idx][-1 - idx]
+        total += matrix[idx][
+            -1 - idx
+        ]  # -1 - 0 = index -1 = (3) // -1 -1 = index -2 = (5) // -1 - 2 = index -3 (7) //
     return total
